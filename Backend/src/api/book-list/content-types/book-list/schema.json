@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_lists",
+  "info": {
+    "singularName": "book-list",
+    "pluralName": "book-lists",
+    "displayName": "bookList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "pages": {
+      "type": "integer",
+      "required": true
+    },
+    "published": {
+      "type": "date",
+      "required": true
+    },
+    "rating": {
+      "max": 10,
+      "min": 0,
+      "type": "decimal"
+    },
+    "rates": {
+      "type": "integer"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
